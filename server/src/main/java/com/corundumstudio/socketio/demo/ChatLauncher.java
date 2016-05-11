@@ -10,6 +10,7 @@ public class ChatLauncher {
         Configuration config = new Configuration();
         config.setHostname("local.wss.com");
         config.setPort(9092);
+        config.setOrigin("*");
 
         final SocketIOServer server = new SocketIOServer(config);
         server.addEventListener("chatevent", ChatObject.class, new DataListener<ChatObject>() {
