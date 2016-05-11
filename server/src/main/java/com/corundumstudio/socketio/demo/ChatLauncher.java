@@ -8,7 +8,7 @@ public class ChatLauncher {
     public static void main(String[] args) throws InterruptedException {
 
         Configuration config = new Configuration();
-        config.setHostname("localhost");
+        config.setHostname("local.wss.com");
         config.setPort(9092);
 
         final SocketIOServer server = new SocketIOServer(config);
